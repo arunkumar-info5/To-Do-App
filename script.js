@@ -6,7 +6,7 @@ button.addEventListener('click', () => {
     if (!(inputText.value === "")) {
         const task = document.createElement('div')
         task.className = 'task'
-        showTasks.appendChild(task)
+        showTasks.prepend(task)
 
         const taskContent = document.createElement('div')
         taskContent.className = 'taskContent'
